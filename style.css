@@ -1,7 +1,22 @@
+@charset "UTF-8"
+/* CSS Document */
+
+/*
+Theme Name: Gloria Zhang Studio
+Author: Gloria Zhang
+Author URI: http://gloriazhang.com/
+Description: This theme is a clean and simple portfolio. The main focuse is to showcase the works, not a fancy website. Therefore, this website has to meet the requirements of easy navigation and simple layout.
+*/
+    
 * {
 	margin: 0;
 	border: 0;
 	padding: 0;
+}
+
+/* getting rid of original setting of list items */
+ul, menu, dir {
+    -webkit-padding-start: 0;
 }
 
 @font-face {
@@ -15,7 +30,6 @@
 nav {
 	margin: 0 auto;
 	margin-top: 5%;
-	width: 85%;
 	text-align: center;
 	height: 50px;
 	line-height: 50px;
@@ -85,15 +99,7 @@ header img {
 div#wrapper {
 	margin: 0 auto;
 	overflow: hidden;
-	width: 80%;
-	margin-top: 5%;
-	margin-bottom: 5%;
-}
-
-div#wrapper img {
-	float: left;
-	margin-right: 5%;
-	margin-bottom: 5%;
+    max-width: 1100px;
 }
 
 div#wrapper h2 {
@@ -121,8 +127,6 @@ div#contant h2{
 div#contant p{
 	margin-bottom: 5%;
 }
-
-.blueberry { width: 80%; }
 
 /*pictures css*/
 
@@ -193,7 +197,6 @@ footer {
 	margin: 0 auto;
 	margin-top: 2%;
 	margin-bottom: 5%;
-	width: 82%;
 	text-align: center;
 	height: 50px;
 	overflow: hidden;
@@ -348,6 +351,10 @@ width: 100%;
         {font-weight:800;
          font-size: 150%;}
     
+    .div#wrapper {
+        width: 80%;
+    }
+    
     nav a:hover {
 	font-size: 130%;
     }
@@ -375,7 +382,7 @@ width: 100%;
          font-size: 130%;}
     
     nav a:hover {
-	font-size: 120%;
+	   font-size: 120%;
     }
     
     .leftNav {
@@ -391,7 +398,7 @@ width: 100%;
     }
     
     footer li {
-	font-size: .65em;
+	   font-size: .65em;
     }
 }
 
@@ -409,12 +416,6 @@ width: 100%;
 
     .rightNav {
         width: 16%;
-    }
-    
-    div#wrapper {
-	overflow: hidden;
-	width: 100%;
-    margin-top: 0;
     }
     
     h2 {
