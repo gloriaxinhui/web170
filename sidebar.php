@@ -14,6 +14,7 @@
 
             } else { // if the page does not have a parent...
 
+                
                 wp_list_pages(array('child_of' => $post->ID, 'title_li' => __(''))); 
                 // ...list the sub-pages with no title
             } 

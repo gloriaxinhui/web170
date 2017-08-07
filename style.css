@@ -14,18 +14,29 @@ Description: This theme is a clean and simple portfolio. The main focuse is to s
 	padding: 0;
 }
 
+body {
+	font-family: 'bonvenocflight';
+	font-weight: 600;
+	color: #404040;
+    line-height: 1.3em;
+}
+
 /* getting rid of original setting of list items */
 ul, menu, dir {
     -webkit-padding-start: 0;
 }
-/*
+
 @font-face {
     font-family: 'bonvenocflight';
     src: url('../fonts/bonvenocf-light-webfont.woff2') format('woff2'),
          url('../fonts/bonvenocf-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}*/
+}
+
+ul li {
+    list-style-type: none;
+}
 
 /* Start Main Menu */
 #navigation {
@@ -43,7 +54,6 @@ ul, menu, dir {
 }
 
 #navigation ul li {
-	list-style-type: none;
     float: left;
     margin: 0;
     width: 16.666666%;
@@ -94,19 +104,13 @@ ul, menu, dir {
 }
 /* footer End */
 
-body {
-	font-family: 'bonvenocflight';
-	font-weight: 600;
-	color: #404040;
-}
-
 a { 
 	text-decoration: none; 
-	color: #272561;
+	color: #4ae;
 }
 
 a:hover{
-	color: #4ae;
+	color: #272561;
 }
 
 #header {
@@ -157,6 +161,25 @@ width: 10%;
 	
 	}
 
+	#widgets {
+		overflow: hidden;
+	}
+
+    #widgets li{
+		margin-bottom: 2%;
+	}
+	
+	#widgets section.widget-item {
+		float: left;
+        width: 30%;
+		margin-right: 5%;
+        list-style-type: none;
+	}
+	
+	#widgets section.widget-item:last-child {
+		margin-right: 0px;
+	}
+
 h1{
     text-align: center;
 }
@@ -173,7 +196,15 @@ h2 a:hover{
 	margin-top: 8%;
 }
 
+.alignleft {
+    margin: 0 5% 3% 0;
+    float: left;
+}
 
+.aligncenter, .alignnone {
+    margin-top: 3%;
+    width: 100%;
+}
 
 .center {
 	text-align: center;
@@ -243,10 +274,6 @@ h2 a:hover{
         width: 100%;
     }
     
-    h2 {
-        font-size: 1em;
-    }
-    
     #footer img {
 	width: 50%;
     }
@@ -278,9 +305,12 @@ h2 a:hover{
         width: 100%;
     }
     
-    h2 {
-        font-size: .5em;
-    }
+    #widgets section.widget-item {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+	}
     
     #footer img {
         width: 30%;

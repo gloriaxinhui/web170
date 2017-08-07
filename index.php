@@ -1,6 +1,5 @@
 <?php get_header(); ?>
-<!-- Begin Content -->
-    <div id="content">
+
     <div class="blueberry">
       <ul class="slides">
       	<li><a href="creative.html"><img src="<?php bloginfo('template_directory'); ?>/images/slider/chicks.jpg" alt="chicks" title="Artworks by Gloria"></a></li>
@@ -16,7 +15,6 @@
     <?php the_content(''); // get page or posting written content ?>
     <?php endwhile; endif; // end the loop ?>
     <small>index.php</small>
-</div>
-<!-- End Content -->
+        
 <?php get_footer() ?>
     

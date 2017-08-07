@@ -28,12 +28,11 @@ $(window).load(function() {
 <div id="wrapper">
 
 <div id="header">
-<a href="index.html"><img src="<?php bloginfo('template_directory'); ?>/images/GZ.png" alt="logo"></a>
+<a href="http://gloriazhang.com/web170/wordpress/"><img src="<?php bloginfo('template_directory'); ?>/images/GZ.png" alt="logo"></a>
 </div> <!-- End Header -->
     
 <!-- Begin main menu -->
     <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => 'div','container_id' => 'navigation', ) ); ?>
 <!-- End main menu -->
-
-        
+ 
 <div id="middle">
