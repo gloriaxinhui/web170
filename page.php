@@ -6,6 +6,7 @@
     
     <?php the_content(''); // get page or posting written content ?>
     <?php endwhile; endif; // end the loop ?>
+    <small>page.php</small>
     </div>
     <!-- End Content -->
     
