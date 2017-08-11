@@ -29,7 +29,9 @@
     
     <!-- Begin Quotes -->
     <?php if (get_post_meta($post->ID, 'Quote', true)) : // check to see if there is a quote ?>
+    
     <blockquote><?php echo get_post_meta($post->ID, 'Quote', true); // write out the quote ?></blockquote>
+    
     <?php endif; ?>
     <!-- End Quotes -->
     

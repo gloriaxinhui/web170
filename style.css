@@ -188,6 +188,27 @@ width: 10%;
 	
 	}
 
+	#sidebar blockquote {
+		position: relative;
+		padding: 10px;
+		margin: 20px 0;
+		border-top: 2px solid #4ae;
+		border-bottom: 2px solid #4ae;
+		font-style: italic;
+	}
+	
+	#sidebar blockquote:before {
+		position: absolute;
+        width: 24px;
+        height: 20px;
+        font-size: 3em;
+        color: #4ae;
+        content: '“';
+        background-color: #fff;
+        top: -5px;
+        left: 0;
+	}
+
 	#widgets {
 		overflow: hidden;
 	}
