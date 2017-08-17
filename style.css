@@ -40,10 +40,9 @@ ul li {
 
 /* Start Main Menu */
 #navigation {
-    width: 100%;
-	margin: 0 auto;
-	text-align: center;
-    margin-top: 1%;
+    width: 112%;
+    text-align: center;
+    margin: 2% 0% 0 -5%;
     line-height: 100%;
 }
 
@@ -166,18 +165,31 @@ width: 10%;
     margin: 0 auto;
     margin-top: 3%;
     overflow: hidden;
+    display: block;
 }
 
 #content {
     width: 70%;
     float: left;
+    overflow: hidden;
+    clear: both;
 	}
+
+.pics{
+    overflow: hidden;
+    width: 100%;
+    margin-top: 2%;
+}
 
 #sidebar {
     width: 25%;
     float: right;
     overflow: hidden;
     text-align: left;
+}
+
+img.wp-post-image {
+    height: auto;
 }
 	
 	#sidebar ul {
@@ -262,6 +274,14 @@ h2 a:hover{
  	width: 3.5%;
 }
 
+.wp-caption-text {
+    text-align: center;
+}
+
+.alignleft {
+    margin: 0 3% 3% 0;
+}
+
 /* Desktop*/
 @media all and (min-width: 1280px){
     
@@ -270,7 +290,7 @@ h2 a:hover{
     }
     
     #wrapper {
-        width: 75%;
+        width: 80%;
     }
     
     #footer {
@@ -309,9 +329,15 @@ h2 a:hover{
 	   font-weight: 600;
     }
     
+    #navigation {
+        width: 109%;
+        margin: 2% 0% 0 -3%;
+    }
+    
     #navigation ul li.current-menu-item a {
         font-weight:600;
-        font-size: 130%;}
+        font-size: 130%;
+    }
     
     #navigation a:hover {
 	   font-size: 120%;
@@ -338,6 +364,11 @@ h2 a:hover{
 
 /* Phone*/
 @media all and (max-width: 480px){
+    
+    #navigation {
+        width: 100%;
+        margin: 2% 0% 0 -3%;
+    }
     
     #navigation ul li ul.sub-menu {
         display: block;

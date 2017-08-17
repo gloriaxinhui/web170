@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title><?php bloginfo('description'); ?> | <?php bloginfo('name'); ?></title>
+<meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />
+    
+<title><?php get_my_title_tag(); ?></title>
 
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/blueberry.css" />
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
